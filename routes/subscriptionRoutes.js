@@ -9,12 +9,11 @@ const {
   deleteSubscription
 } = require("../controllers/subscriptionController");
 
-// CRUD Routes
 
-router.get("/", getAllSubscriptions);          // Read all
-router.get("/:id", getSingleSubscription);    // Read single
-router.post("/", createSubscription);         // Create
-router.put("/:id", updateSubscription);       // Update
-router.delete("/:id", deleteSubscription);    // Delete
+router.get("/", getAllSubscriptions);         
+router.get("/:id", getSingleSubscription);    
+router.post("/", createSubscription);         
+router.put("/:id", updateSubscription);       
+router.delete("/:id", deleteSubscription);   
 
 module.exports = router;
